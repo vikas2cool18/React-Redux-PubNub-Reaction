@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PublishMessage from './components/PublishMessage';
+import MessageBoard from './components/MessageBoard';
+import SetUserName from './components/SetUserName';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SetUserName />
+      <h2>Reaction</h2>
+      <hr />
+      <PublishMessage />
+      <hr />
+      <MessageBoard />
     </div>
   );
 }
